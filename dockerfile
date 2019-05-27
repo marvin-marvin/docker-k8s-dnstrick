@@ -1,6 +1,6 @@
 FROM ubuntu:latest 
 RUN apt-get update -y && \
-    apt-get install -y curl cron && \
+    apt-get install -y curl cron tzdata && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 VOLUME /etc/cron.d
 ADD crontab /etc/cron.d/crontab
