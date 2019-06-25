@@ -1,3 +1,3 @@
 # make sure crontab is used
 @reboot /usr/bin/crontab /etc/cron.d/crontab
-*/15 * * * * /usr/bin/crontab /etc/cron.d/crontab
+#*/15 * * * * /usr/bin/crontab /etc/cron.d/crontab
