@@ -44,6 +44,7 @@ spec:
         volumeMounts:
         - mountPath: /etc/cron.d
           name: k8s-cfg-dns-trick
+          readOnly: true
         resources: {}
         securityContext:
           privileged: false
