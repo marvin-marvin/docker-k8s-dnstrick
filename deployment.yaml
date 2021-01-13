@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
@@ -10,7 +10,7 @@ metadata:
     k8s-app: dns-trick
     location: lan
   name: dns-trick
-  selfLink: /apis/extensions/v1beta1/namespaces/lan/deployments/dns-trick
+  selfLink: /apis/apps/v1/namespaces/lan/deployments/dns-trick
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
